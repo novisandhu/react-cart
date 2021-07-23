@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
 import Navigation from './components/Navigation';
+import Products from './pages/Products';
 
 const App = () => {
     return(
@@ -10,7 +10,8 @@ const App = () => {
             <Navigation />
             <Switch>
                 <Route path="/" component={Home} exact></Route>
-                <Route path="/about" component={About}></Route>
+                {/* <Route path="/about" component={About}></Route> */}
+                <Route path="/products" component={Products}></Route>
             </Switch>
         </Router>
         </>
